@@ -1,0 +1,71 @@
+body {
+	font-family: "Arial", sans-serif;
+	background-color: rgb(32, 32, 32);
+	color: rgb(232, 232, 232);
+}
+
+h1, h2, h3 {
+	font-family: "Verdana", sans-serif;
+	font-weight: 700;
+}
+
+h1 {
+	font-size: 36px;
+}
+
+h2 {
+	font-size: 18px;
+}
+
+h3 {
+	font-size: 14px;
+}
+
+header h2 {
+	font-weight: 400;
+}
+
+img {
+	float: left;
+	padding-right: 12px;
+	padding-bottom: 12px;
+}
+
+article {
+	min-height: 150px; 
+}
+
+#aboutSection {
+	width: 70%;
+	float: left;
+}
+
+#aboutSection p {
+	margin-right: 10px;
+}
+
+#blogSection {
+	width: 30%;
+	float: right;
+	background-color: rgb(44, 56, 53);
+}
+
+#blogSection > h2, #blogSection > article {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#blogSection article p {
+	color: rgb(195, 195, 195);
+}
+
+hgroup > h1, hgroup > h2 {
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+header {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
