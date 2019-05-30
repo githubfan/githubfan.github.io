@@ -69,3 +69,9 @@ header {
 	padding-bottom: 10px;
 }
 
+footer {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: SlateBlue;
+	border: 5px solid;
+
