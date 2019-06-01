@@ -79,12 +79,14 @@ border-radius: 10px;
 font-family:sans-serif;
 font-weight:bold;
 padding: 16px;
+	text-align:center;
 }
 nav ul li {
 display:inline;
 border-right: 2px solid #111111;
 padding-right: 8px;
 padding-left: 8px;
+	
 }
 nav ul li:last-child {
 border-right:none;
