@@ -1,8 +1,6 @@
 * {
   box-sizing: border-box;
- 
-  @import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
- 
+ @import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
 }
 body {
   text-align: center;
