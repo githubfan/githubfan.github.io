@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
- @import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 }
 body {
   text-align: center;
@@ -9,7 +9,7 @@ body {
   align-items: center;
   padding: 0 20px;
   background-color: #fadadd;
-  font-family: 'Comfortaa', cursive;
+  font-family: 'Open Sans', sans-serif;
   }
 
 footer {
@@ -24,7 +24,7 @@ background-color: #3499FF;
   padding: 0 20px;
   border-radius: 40px;
   box-shadow: 0 10px 40px rgba(159, 162, 177, .8);
-  font-family: 'Comfortaa', cursive;
+ font-family: 'Open Sans', sans-serif;
 }
 .nav-item {
   color: #83818c;
@@ -33,7 +33,7 @@ background-color: #3499FF;
   transition: .3s;
   margin: 0 6px;
   z-index: 1;
-  font-family: 'Comfortaa', cursive;
+ font-family: 'Open Sans', sans-serif;
   font-weight: 500;
   position: relative;
   
