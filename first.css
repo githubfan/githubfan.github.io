@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
+
 * {
   box-sizing: border-box;
-@import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
-  
 }
+
 body {
   text-align: center;
   display: flex;
@@ -11,11 +12,12 @@ body {
   padding: 0 20px;
   background-color: #fadadd;
   font-family: 'Comfortaa', cursive;
-  }
+}
 
 footer {
-background-color: #3499FF;
+  background-color: #3499FF;
 }
+
 .nav {
   display: inline-flex;
   position: relative;
@@ -27,6 +29,7 @@ background-color: #3499FF;
   box-shadow: 0 10px 40px rgba(159, 162, 177, .8);
   font-family: 'Comfortaa', cursive;
 }
+
 .nav-item {
   color: #83818c;
   padding: 20px;
@@ -37,8 +40,9 @@ background-color: #3499FF;
   font-family: 'Comfortaa', cursive;
   font-weight: 500;
   position: relative;
-  
-  &:before {
+}
+
+.nav-item:before {
     content: "";
     position: absolute;
     bottom: -6px;
@@ -49,12 +53,13 @@ background-color: #3499FF;
     border-radius: 8px 8px 0 0;
     opacity: 0;
     transition: .3s;
-  }
 }
+
 .nav-item:not(.is-active):hover:before {
   opacity: 1;
   bottom: 0;
 }
+
 .nav-item:not(.is-active):hover { color: #333; }
 .nav-indicator {
   position: absolute;
@@ -66,6 +71,7 @@ background-color: #3499FF;
   z-index: 1;
   border-radius: 8px 8px 0 0;
 }
+
 @media (max-width: 580px) {
   .nav { overflow: auto; }
 }
