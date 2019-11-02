@@ -82,6 +82,9 @@ footer {
     justify-content: space-between;
     align-items: center;
     float: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container .card{
