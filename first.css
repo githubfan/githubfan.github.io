@@ -36,7 +36,7 @@ footer {
   transition: .3s;
   margin: 0 6px;
   z-index: 1;
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Comfortaa', sans-serif;
   font-weight: 500;
   position: relative;
   
@@ -84,8 +84,9 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: Trebuchet MS;
+    font-family: Comfortaa;
     float: center;
+    padding: 25px;
 }
 
 .container .card{
