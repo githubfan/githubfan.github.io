@@ -1,0 +1,91 @@
+        @import url('https://fonts.googleapis.com/css?family=Varela+Round&display=swap');
+        body {
+            font-family: 'Varela Round', sans-serif;
+            background-image: url("https://i.ibb.co/264fypT/y-so-serious-white.png");
+        }
+        
+        .nav {
+            font-family: 'Varela Round', sans-serif;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            height: 55px;
+            box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+            background-color: #ffffff;
+            display: flex;
+            overflow-x: auto;
+        }
+        
+        .nav__link {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex-grow: 1;
+            min-width: 50px;
+            overflow: hidden;
+            white-space: nowrap;
+            font-family: 'Varela Round', sans-serif;
+            font-size: 13px;
+            color: #444444;
+            text-decoration: none;
+            -webkit-tap-highlight-color: transparent;
+            transition: background-color 0.1s ease-in-out;
+        }
+        
+        .nav__link:hover {
+            background-color: #eeeeee;
+        }
+        
+        .nav__link--active {
+            color: #009578;
+        }
+        
+        .nav__icon {
+            font-size: 18px;
+        }
+        
+        div.header {
+            text-align: center;
+            background-color: lightblue;
+        }
+        
+        hr {
+            width: 50px;
+        }
+        
+        div.textalign {
+            text-align: center;
+            padding: 5px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 15px;
+            border-radius: 15px;
+        }
+        
+        div.infoleft {
+            width: 500px;
+            height: auto;
+            float: left;
+        }
+        
+        div.inforight {
+            float: right;
+            width: 500px;
+            height: auto;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+ div.pricing {
+     border-radius: 50px;
+background: #e1e1e1;
+box-shadow:  20px 20px 60px #bfbfbf, 
+             -20px -20px 60px #ffffff;
+             width: 250px;
+             height: 500px;
+ }
+    
