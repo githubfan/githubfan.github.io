@@ -1,60 +1,121 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>404 - Page not found</title>
-    <style>
-      body{
-  margin: 0;
-  padding: 0;
-  font-family: "montserrat",sans-serif;
-  min-height: 100vh;
-  background-image: linear-gradient(125deg,#6a89cc,#b8e994);
-}
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+</script>
 
-.container{
-  width: 100%;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  text-align: center;
-  color: #343434
-}
+ <link rel="shortcut icon" href="https://cdn.iconscout.com/icon/free/png-512/code-280-460136.png" type="image/x-icon">
 
-.container h1{
-  font-size: 160px;
-  margin: 0;
-  font-weight: 900;
-  letter-spacing: 20px;
-  background: url(bg.jpg) center no-repeat;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-}
-
-.container a{
-  text-decoration: none;
-  background: #e55039aa;
+<title>Coding Master - 404</title>
+<style>
+body {
+  background: #000;
   color: #fff;
-  padding: 12px 24px;
-  display: inline-block;
-  border-radius: 25px;
-  font-size: 14px;
-  text-transform: uppercase;
-  transition: 0.4s;
+  font-family: "Lucida Console", Monaco, monospace;
+  line-height: 1.5;
 }
 
-.container a:hover{
-  background: #e55039;
+a {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: solid 2px;
 }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <h2>Oops! Page not found.</h2>
-      <h1>404</h1>
-      <p>We can't find the page you're looking for.</p>
-      <a href="index.html">Go back home and start over</a>
-    </div>
-    <script src="//code.tidio.co/ghb7346tkbd3hwfopfzbdtyrdr4ffycs.js"></script>
-  </body>
+
+@media (min-width: 640px) {
+  body {
+    background-image: url(https://cdn.dribbble.com/users/247458/screenshots/5083720/wallpaper2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+  }
+
+  .content {
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #333;
+    padding: 45px 20px 20px;
+    box-sizing: border-box;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+    border-radius: 5px 5px 0 0;
+  }
+
+  .browser-bar {
+    background: #f9f9f3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 5px;
+    overflow: hidden;
+    border-radius: 5px 5px 0 0;
+  }
+
+  .button {
+    display: inline-block;
+    float: left;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+  }
+
+  .close {
+    background: #fc635d;
+  }
+
+  .min {
+    background: #fdbc40;
+  }
+
+  .max {
+    background: #34c84a;
+  }
+}
+</style>
+<script>
+  window.console = window.console || function(t) {};
+</script>
+<script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+</head>
+<body translate="no">
+<div class="content">
+<div class="browser-bar">
+<span class="close button"></span>
+<span class="min button"></span>
+<span class="max button"></span>
+</div>
+<div class="text"></div>
+</div>
+<script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script id="rendered-js">
+!function (t) {"use strict";var s = function (s, e) {this.el = t(s), this.options = t.extend({}, t.fn.typed.defaults, e), this.isInput = this.el.is("input"), this.attr = this.options.attr, this.showCursor = this.isInput ? !1 : this.options.showCursor, this.elContent = this.attr ? this.el.attr(this.attr) : this.el.text(), this.contentType = this.options.contentType, this.typeSpeed = this.options.typeSpeed, this.startDelay = this.options.startDelay, this.backSpeed = this.options.backSpeed, this.backDelay = this.options.backDelay, this.stringsElement = this.options.stringsElement, this.strings = this.options.strings, this.strPos = 0, this.arrayPos = 0, this.stopNum = 0, this.loop = this.options.loop, this.loopCount = this.options.loopCount, this.curLoop = 0, this.stop = !1, this.cursorChar = this.options.cursorChar, this.shuffle = this.options.shuffle, this.sequence = [], this.build();};s.prototype = { constructor: s, init: function () {var t = this;t.timeout = setTimeout(function () {for (var s = 0; s < t.strings.length; ++s) {if (window.CP.shouldStopExecution(0)) break;t.sequence[s] = s;}window.CP.exitedLoop(0);t.shuffle && (t.sequence = t.shuffleArray(t.sequence)), t.typewrite(t.strings[t.sequence[t.arrayPos]], t.strPos);}, t.startDelay);}, build: function () {var s = this;if (this.showCursor === !0 && (this.cursor = t('<span class="typed-cursor">' + this.cursorChar + "</span>"), this.el.after(this.cursor)), this.stringsElement) {s.strings = [], this.stringsElement.hide();var e = this.stringsElement.find("p");t.each(e, function (e, i) {s.strings.push(t(i).html());});}this.init();}, typewrite: function (t, s) {if (this.stop !== !0) {var e = Math.round(70 * Math.random()) + this.typeSpeed,i = this;i.timeout = setTimeout(function () {var e = 0,r = t.substr(s);if ("^" === r.charAt(0)) {var o = 1;/^\^\d+/.test(r) && (r = /\d+/.exec(r)[0], o += r.length, e = parseInt(r)), t = t.substring(0, s) + t.substring(s + o);}if ("html" === i.contentType) {var n = t.substr(s).charAt(0);if ("<" === n || "&" === n) {var a = "",h = "";for (h = "<" === n ? ">" : ";"; t.substr(s).charAt(0) !== h;) {if (window.CP.shouldStopExecution(1)) break;a += t.substr(s).charAt(0), s++;}window.CP.exitedLoop(1);s++, a += h;}}i.timeout = setTimeout(function () {if (s === t.length) {if (i.options.onStringTyped(i.arrayPos), i.arrayPos === i.strings.length - 1 && (i.options.callback(), i.curLoop++, i.loop === !1 || i.curLoop === i.loopCount)) return;i.timeout = setTimeout(function () {i.backspace(t, s);}, i.backDelay);} else {0 === s && i.options.preStringTyped(i.arrayPos);var e = t.substr(0, s + 1);i.attr ? i.el.attr(i.attr, e) : i.isInput ? i.el.val(e) : "html" === i.contentType ? i.el.html(e) : i.el.text(e), s++, i.typewrite(t, s);}}, e);}, e);}}, backspace: function (t, s) {if (this.stop !== !0) {var e = Math.round(70 * Math.random()) + this.backSpeed,i = this;i.timeout = setTimeout(function () {if ("html" === i.contentType && ">" === t.substr(s).charAt(0)) {for (var e = ""; "<" !== t.substr(s).charAt(0);) {if (window.CP.shouldStopExecution(2)) break;e -= t.substr(s).charAt(0), s--;}window.CP.exitedLoop(2);s--, e += "<";}var r = t.substr(0, s);i.attr ? i.el.attr(i.attr, r) : i.isInput ? i.el.val(r) : "html" === i.contentType ? i.el.html(r) : i.el.text(r), s > i.stopNum ? (s--, i.backspace(t, s)) : s <= i.stopNum && (i.arrayPos++, i.arrayPos === i.strings.length ? (i.arrayPos = 0, i.shuffle && (i.sequence = i.shuffleArray(i.sequence)), i.init()) : i.typewrite(i.strings[i.sequence[i.arrayPos]], s));}, e);}}, shuffleArray: function (t) {var s,e,i = t.length;if (i) {for (; --i;) {if (window.CP.shouldStopExecution(4)) break;if (window.CP.shouldStopExecution(3)) break;e = Math.floor(Math.random() * (i + 1)), s = t[e], t[e] = t[i], t[i] = s;}window.CP.exitedLoop(4);window.CP.exitedLoop(3);}return t;}, reset: function () {var t = this;clearInterval(t.timeout);var s = this.el.attr("id");this.el.after('<span id="' + s + '"/>'), this.el.remove(), "undefined" != typeof this.cursor && this.cursor.remove(), t.options.resetCallback();} }, t.fn.typed = function (e) {return this.each(function () {var i = t(this),r = i.data("typed"),o = "object" == typeof e && e;r || i.data("typed", r = new s(this, o)), "string" == typeof e && r[e]();});}, t.fn.typed.defaults = { strings: ["These are the default values...", "You know what you should do?", "Use your own!", "Have a great day!"], stringsElement: null, typeSpeed: 0, startDelay: 0, backSpeed: 0, shuffle: !1, backDelay: 500, loop: !1, loopCount: !1, showCursor: !0, cursorChar: "|", attr: null, contentType: "html", callback: function () {}, preStringTyped: function () {}, onStringTyped: function () {}, resetCallback: function () {} };}(window.jQuery);
+
+$(function () {
+  $('.text').typed({
+    strings: [
+    "Oops! It looks like you're lost. <br /> ^1000" +
+    "Sorry about that. <br /> ^1000" +
+    "Let me try and help. <br /> ^1000" +
+    "Go back <a href='https://codingmaster.codes'>home</a> and start over."],
+
+    typeSpeed: 0,
+    showCursor: false });
+
+});
+//# sourceURL=pen.js
+    </script>
+</body>
 </html>
